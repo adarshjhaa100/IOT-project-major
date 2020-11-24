@@ -1,0 +1,32 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {1.1}Overview}{1}
+\contentsline {section}{\numberline {1.2}Motivation}{3}
+\contentsline {section}{\numberline {1.3}Problem Statement}{5}
+\contentsline {chapter}{\numberline {2}Literature Review}{6}
+\contentsline {section}{\numberline {2.1}Different Queuing Models}{6}
+\contentsline {section}{\numberline {2.2}Discrete Event Simulation}{8}
+\contentsline {subsection}{\numberline {2.2.1}Poisson Distribution}{12}
+\contentsline {section}{\numberline {2.3}Electronic Health Records (EHR)}{13}
+\contentsline {subsection}{\numberline {2.3.1}HL7}{13}
+\contentsline {subsection}{\numberline {2.3.2}Fast Healthcare Interoperability Resources}{13}
+\contentsline {subsubsection}{FHIR Architecture and Implementation}{14}
+\contentsline {subsubsection}{Semantic Interoperability}{17}
+\contentsline {chapter}{\numberline {3} Related Work}{18}
+\contentsline {chapter}{\numberline {4}Proposed Work}{20}
+\contentsline {section}{\numberline {4.1}Present workflow of system}{20}
+\contentsline {section}{\numberline {4.2}Proposed workflow of system}{22}
+\contentsline {subsection}{\numberline {4.2.1}Smart Registration process}{23}
+\contentsline {subsection}{\numberline {4.2.2}Portable Health Records}{24}
+\contentsline {chapter}{\numberline {5}Experimental Results}{26}
+\contentsline {section}{\numberline {5.1}Experimental Environment}{26}
+\contentsline {section}{\numberline {5.2}Simulation of present system}{27}
+\contentsline {section}{\numberline {5.3}Simulation of proposed system}{29}
+\contentsline {subsection}{\numberline {5.3.1}Kiosk Failure}{29}
+\contentsline {subsection}{\numberline {5.3.2}Server crash or Power failure : Records not available at consultant's system}{30}
+\contentsline {section}{\numberline {5.4}Comparative results}{31}
+\contentsline {subsection}{\numberline {5.4.1}Registration time}{31}
+\contentsline {subsection}{\numberline {5.4.2}Consultation time}{32}
+\contentsline {section}{\numberline {5.5}Sample patient Record}{33}
+\contentsline {chapter}{\numberline {6}Conclusion and Future Work}{35}
+\contentsline {chapter}{\numberline {A}}{36}
+\contentsline {section}{\numberline {A.1}AIIMS Report reference}{36}
