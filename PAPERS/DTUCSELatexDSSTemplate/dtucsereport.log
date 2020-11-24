@@ -1,0 +1,655 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.3.6)  29 NOV 2019 12:47
+entering extended mode
+**./dtucsereport.tex
+(dtucsereport.tex
+LaTeX2e <2018-12-01>
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\report.cls"
+Document Class: report 2018/09/03 v1.4i Standard LaTeX document class
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size12.clo"
+File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@chapter=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\c@figure=\count87
+\c@table=\count88
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx
+.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.s
+ty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics
+.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty
+"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\grap
+hics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdft
+ex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/eqnarray\eqnarray
+.sty"
+equationarray 1.3 <December 1, 2010>
+Package: eqnarray 
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\array.sty"
+Package: array 2018/11/13 v2.4j Tabular extension package (FMi)
+\col@sep=\dimen105
+\ar@mcellbox=\box27
+\extrarowheight=\dimen106
+\NC@list=\toks15
+\extratabsurround=\skip43
+\backup@length=\skip44
+\ar@cellbox=\box28
+)
+\@eqargcnt=\count89
+)
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.s
+ty"
+Package: amsmath 2018/12/01 v2.17b AMS math features
+\@mathmargin=\skip45
+
+For additional information on amsmath, use the `?' option.
+
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.s
+ty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.st
+y"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen107
+))
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.st
+y"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen108
+)
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.st
+y"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count90
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count91
+\leftroot@=\count92
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count93
+\DOTSCASE@=\count94
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box29
+\strutbox@=\box30
+\big@size=\dimen109
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count95
+\c@MaxMatrixCols=\count96
+\dotsspace@=\muskip10
+\c@parentequation=\count97
+\dspbrk@lvl=\count98
+\tag@help=\toks17
+\row@=\count99
+\column@=\count100
+\maxfields@=\count101
+\andhelp@=\toks18
+\eqnshift@=\dimen110
+\alignsep@=\dimen111
+\tagshift@=\dimen112
+\tagwidth@=\dimen113
+\totwidth@=\dimen114
+\lineht@=\dimen115
+\@envbody=\toks19
+\multlinegap=\skip46
+\multlinetaggap=\skip47
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
+) ("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cite\cite.sty"
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amssymb.
+sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amsfonts
+.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count102
+\float@exts=\toks21
+\float@box=\box31
+\@float@everytoks=\toks22
+\@floatcapt=\box32
+)
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption.s
+ty"
+Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
+
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption3.
+sty"
+Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+\captionmargin=\dimen116
+\captionmargin@=\dimen117
+\captionwidth=\dimen118
+\caption@tempdima=\dimen119
+\caption@indent=\dimen120
+\caption@parindent=\dimen121
+\caption@hangindent=\dimen122
+)
+\c@caption@flags=\count103
+\c@ContinuedFloat=\count104
+Package caption Info: float package is loaded.
+)
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\subcaptio
+n.sty"
+Package: subcaption 2018/05/01 v1.1-162 Sub-captions (AR)
+\c@subfigure=\count105
+\c@subtable=\count106
+)
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\color.st
+y"
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\colo
+r.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty"
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/appendix\appendix
+.sty"
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count107
+\c@@ppsavesec=\count108
+\c@@ppsaveapp=\count109
+)
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/multirow\multirow
+.sty"
+Package: multirow 2019/01/01 v2.4 Span multiple rows of a table
+\multirow@colwidth=\skip48
+\multirow@cntb=\count110
+\multirow@dima=\skip49
+\bigstrutjot=\dimen123
+)
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf
+.sty"
+Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
+
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf
+-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\infwar
+err.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\grfext.s
+ty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvdefi
+nekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ltxcmd
+s.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\kvoption
+s.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvsetk
+eys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\etexcm
+ds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifluat
+ex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+))))
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\pdftex
+cmds.sty"
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifpdf.
+sty"
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+))
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry
+.sty"
+Package: geometry 2018/04/16 v5.8 Page Geometry
+
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifvtex
+.sty"
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ifxetex\ifxetex
+.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count111
+\Gm@cntv=\count112
+\c@Gm@tempcnt=\count113
+\Gm@bindingoffset=\dimen124
+\Gm@wd@mp=\dimen125
+\Gm@odd@mp=\dimen126
+\Gm@even@mp=\dimen127
+\Gm@layoutwidth=\dimen128
+\Gm@layoutheight=\dimen129
+\Gm@layouthoffset=\dimen130
+\Gm@layoutvoffset=\dimen131
+\Gm@dimlist=\toks23
+
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry
+.cfg")) (dtucsereport.aux
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+)
+\openout1 = `dtucsereport.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-
+pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count114
+\scratchdimen=\dimen132
+\scratchbox=\box33
+\nofMPsegments=\count115
+\nofMParguments=\count116
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count117
+\MPscratchDim=\dimen133
+\MPnumerator=\count118
+\makeMPintoPDFobject=\count119
+\everyMPtoPDFconversion=\toks25
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26997pt, 452.96793pt, 72.26997pt)
+* v-part:(T,H,B)=(72.26997pt, 700.5069pt, 72.26997pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=452.96793pt
+* \textheight=700.5069pt
+* \oddsidemargin=-0.00002pt
+* \evensidemargin=-0.00002pt
+* \topmargin=-37.00002pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+<DTULOGO.jpg, id=1, 249.18094pt x 216.05719pt>
+File: DTULOGO.jpg Graphic file (type jpg)
+<use DTULOGO.jpg>
+Package pdftex.def Info: DTULOGO.jpg  used on input line 80.
+(pdftex.def)             Requested size: 174.42545pt x 151.23898pt.
+[1
+
+{C:/Users/sethia/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./DTULOGO.
+jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 109--116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--116
+
+ []
+
+[1
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 121--124
+
+ []
+
+[2
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 129--133
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--133
+
+ []
+
+[3
+
+] [4
+
+] (dtucsereport.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 2.
+
+("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 2.
+ ("C:\Users\sethia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd
+"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
+\tf@toc=\write3
+\openout3 = `dtucsereport.toc'.
+
+ [5
+
+
+] (dtucsereport.lof)
+\tf@lof=\write4
+\openout4 = `dtucsereport.lof'.
+
+ [6
+
+]
+Chapter 1.
+[1
+
+] [2
+
+] [3
+
+]
+Chapter 2.
+<servers.JPG, id=38, 499.11469pt x 428.35031pt>
+File: servers.JPG Graphic file (type jpg)
+<use servers.JPG>
+Package pdftex.def Info: servers.JPG  used on input line 172.
+(pdftex.def)             Requested size: 299.47112pt x 257.01216pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--181
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--181
+
+ []
+
+[4
+
+ <./servers.JPG>] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--192
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 208--210
+
+ []
+
+<arch.jpeg, id=56, 632.3625pt x 347.04657pt>
+File: arch.jpeg Graphic file (type jpg)
+<use arch.jpeg>
+Package pdftex.def Info: arch.jpeg  used on input line 216.
+(pdftex.def)             Requested size: 442.65074pt x 242.93094pt.
+[7 <./arch.jpeg>]
+Underfull \hbox (badness 10000) in paragraph at lines 222--224
+
+ []
+
+[8
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 229--237
+
+ []
+
+[9
+
+]
+Chapter 3.
+<flow.JPG, id=66, 443.40656pt x 361.35pt>
+File: flow.JPG Graphic file (type jpg)
+<use flow.JPG>
+Package pdftex.def Info: flow.JPG  used on input line 244.
+(pdftex.def)             Requested size: 443.40547pt x 361.34912pt.
+[10
+
+ <./flow.JPG>] [11]
+<final.jpg, id=73, 918.7926pt x 464.937pt>
+File: final.jpg Graphic file (type jpg)
+<use final.jpg>
+Package pdftex.def Info: final.jpg  used on input line 254.
+(pdftex.def)             Requested size: 459.39517pt x 232.46793pt.
+
+Overfull \hbox (6.42725pt too wide) in paragraph at lines 254--255
+ [] 
+ []
+
+[12
+
+ <./final.jpg>]
+Chapter 4.
+<pr2.jpg, id=78, 493.845pt x 277.035pt>
+File: pr2.jpg Graphic file (type jpg)
+<use pr2.jpg>
+Package pdftex.def Info: pr2.jpg  used on input line 287.
+(pdftex.def)             Requested size: 493.84378pt x 277.03432pt.
+
+Overfull \hbox (40.87585pt too wide) in paragraph at lines 287--288
+ [] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<exp2.jpg, id=79, 312.41719pt x 191.21437pt>
+File: exp2.jpg Graphic file (type jpg)
+<use exp2.jpg>
+Package pdftex.def Info: exp2.jpg  used on input line 293.
+(pdftex.def)             Requested size: 343.65996pt x 210.33644pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<exp1.jpg, id=80, 306.39468pt x 163.3603pt>
+File: exp1.jpg Graphic file (type jpg)
+<use exp1.jpg>
+Package pdftex.def Info: exp1.jpg  used on input line 299.
+(pdftex.def)             Requested size: 337.03519pt x 179.69687pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[13
+
+] [14 <./pr2.jpg> <./exp2.jpg>] [15 <./exp1.jpg>]
+<propo.jpg, id=90, 551.05875pt x 184.43906pt>
+File: propo.jpg Graphic file (type jpg)
+<use propo.jpg>
+Package pdftex.def Info: propo.jpg  used on input line 307.
+(pdftex.def)             Requested size: 330.63779pt x 110.66428pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 312.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 338.
+
+[16
+
+ <./propo.jpg>] [17] (dtucsereport.bbl [18
+
+
+]) [19
+
+] (dtucsereport.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 4563 strings out of 492946
+ 69275 string characters out of 3125823
+ 140430 words of memory out of 3000000
+ 8365 multiletter control sequences out of 15000+200000
+ 11709 words of font info for 43 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 42i,10n,39p,481b,338s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/sethia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmbx12.pfb><C:/Users/sethia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmex10.pfb><C:/Users/sethia/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/sethia/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/sethia/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users
+/sethia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.
+pfb><C:/Users/sethia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmr17.pfb><C:/Users/sethia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmr8.pfb><C:/Users/sethia/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/sethia/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/sethia/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on dtucsereport.pdf (26 pages, 916456 bytes).
+PDF statistics:
+ 139 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,21 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}% 
+\contentsline {section}{\numberline {1.1}Overview}{1}% 
+\contentsline {section}{\numberline {1.2}Motivation}{2}% 
+\contentsline {section}{\numberline {1.3}Problem Statement}{3}% 
+\contentsline {chapter}{\numberline {2}Literature Review}{4}% 
+\contentsline {section}{\numberline {2.1}Figures}{4}% 
+\contentsline {section}{\numberline {2.2}Equations}{4}% 
+\contentsline {subsection}{\numberline {2.2.1}Subsection name}{7}% 
+\contentsline {section}{\numberline {2.3}Electronic Health Records (EHR)}{7}% 
+\contentsline {subsection}{\numberline {2.3.1}HL7}{7}% 
+\contentsline {subsubsection}{FHIR Architecture and Implementation}{7}% 
+\contentsline {subsubsection}{Semantic Interoperability}{9}% 
+\contentsline {chapter}{\numberline {3}Proposed Work}{10}% 
+\contentsline {section}{\numberline {3.1}Present workflow of system}{10}% 
+\contentsline {section}{\numberline {3.2}Proposed workflow of system/ Proposed Algorithm/ System}{11}% 
+\contentsline {subsection}{\numberline {3.2.1}Smart Registration process}{12}% 
+\contentsline {subsection}{\numberline {3.2.2}Portable Health Records}{12}% 
+\contentsline {chapter}{\numberline {4}Experimental Results}{13}% 
+\contentsline {section}{\numberline {4.1}Experimental Environment}{13}% 
+\contentsline {section}{\numberline {4.2}Simulation of present system}{13}% 
+\contentsline {section}{\numberline {4.3}Simulation of proposed system}{16}% 
