@@ -72,13 +72,13 @@
 
 \titlerunning{Predicting irrigation WQI and suggesting the best plants }        % if too long for running head
 
-\author{Dr. Rajesh Kumar Yadav        \and
+\author{Rajesh Kumar Yadav        \and
         Adarsh Jha \and Aditya Choudhary %etc.
 }
 
 %\authorrunning{Short form of author list} % if too long for running head
 
-\institute{Dr. Rajesh Kumar Yadav \\ 
+\institute{Rajesh Kumar Yadav \\ 
                 Assistant Professor \at
               Department of Computer Science and Engineering, Delhi Technological University, New Delhi-110042, India \\
               \email{rkyadav@dtu.ac.in}            \\
@@ -100,7 +100,7 @@
 
 \begin{abstract}
 \label{abstract}
-Indian economy is highly affected by its agriculture sector in which more than half of the people are involved but its contribution to GDP is less than a quarter. One of the major reasons for the low productivity is inefficient agricultural practices. This paper is  focused on predicting quality of irrigation water and suggesting plants based on soil and water properties. We used five properties of water quality: Electrical Conductivity(EC), Sodium Absorption Ratio(SAR), Chloride, Sodium and Bicarbonate ion concentration to calculate and further classify water samples based on irrigation water quality index(IWQI). Seven classification methods were used for the classification on major ions water dataset  with Random Forest Classifier giving the best accuracy(86.9\%) followed by Gradient Boosting and MLP network classifier. We also developed a model for suggesting plants based on Salinity and pH properties of soil and water. We applied the models on major ions dataset(for water quality index and plant suggestion based on IWQI) and LUCAS topsoil dataset (for suggesting plants based on soil properties). 
+Indian economy is highly affected by its agriculture sector in which more than half of the people are involved but its contribution to GDP is less than a quarter. One of the major reasons for the low productivity is inefficient agricultural practices. This paper is  focused on predicting quality of irrigation water and suggesting plants based on soil and water properties. We used five properties of water quality: Electrical Conductivity(EC), Sodium Absorption Ratio(SAR), Chloride, Sodium and Bicarbonate ion concentration to calculate and further classify water samples based on irrigation water quality index(IWQI). Seven classification methods were used for the classification on major ions water dataset  with Random Forest Classifier giving the best accuracy(86.9\%) followed by Gradient Boosting and MLP network classifier. We also developed a model for suggesting plants based on Salinity and pH properties of soil and IWQI of water. We applied the models on major ions dataset(for water quality index and plant suggestion based on IWQI) and LUCAS topsoil dataset (for suggesting plants based on soil properties). 
 
 
 
@@ -113,7 +113,7 @@ Indian economy is highly affected by its agriculture sector in which more than h
 \label{section:introduction}
 According to the economic survey of 2018 in India, around 50\% of the workforce is involved in the agriculture sector\cite{article:indianEconomicSurvey}. The contribution of the sector to the GDP is only 16\% which has reduced significantly from 50\% in 1950. The decline is not limited to India and is observed in the rest of the world. This low productivity depends on many factors, one of the major one is wastage of farming resources, money and time. Also, the majority of people involved in farming are from rural areas who are poor and have insufficient knowledge regarding farming practices. Each phase of farming, be it preparation of soil, nutrient management, irrigation or harvesting, requires proper analysis of soil, water, weather, sunlight etc. for improving the productivity of crops. Study of these parameters requires lab tests which are expensive. Due to farmers being relatively poor, there is a need to develop methods which would find parameters cheaper than lab tests. With improvement in technology, various farming equipment have been developed aiming to increase productivity and proper utilization of resources. The use of the Internet of Things, which consists of various devices connected through a network interacting with computers to transfer data, is becoming feasible with the internet and computers getting faster and cheaper. Various sensors can be placed in a farming environment to obtain large, real-time datasets such as irrigation water(pH, Electrical Conductivity, concentration of various ions), soil(moisture, pH, nutrients)) , weather(temperature, humidity etc). These datasets can then be analyzed and used to train machine learning models that will help in proper utilization of resources, determining which crop could be suitable for a specific environment and increasing the overall efficiency of crop production. 
 
-In this work we contributed by predicting IWQI and suggesting plants based on a given water or soil sample. We do this by calculating water quality parameters, SAR(Sodium Absorption Ratio), Quality Measurement values and use them to predict IWQI and classify water samples according to it. We use several classification algorithms like Decision Tree, SVM, ANN, Gradient Boost Classifier, Random Forest Classifier, Decision Tree, Naive Bayes and Bagging Classifier to do so. We suggest plants for any water or soil value based on the pH and electrical conductivity ranges. 
+In this work we contributed by predicting IWQI and suggesting plants based on a given water or soil sample. We do this by calculating water quality parameters, SAR(Sodium Absorption Ratio), Quality Measurement values and use them to predict IWQI and classify water samples according to it. We use several classification algorithms like Decision Tree, SVM, ANN, Gradient Boost Classifier, Random Forest Classifier, Decision Tree, Naive Bayes and Bagging Classifier to do so. We suggest plants for water samples based on quality index and for soil samples based on their acidity and salinity ranges. 
 
 The rest of the paper is structured as follows: Section \ref{section:realtedWork} focuses on works related to this paper. Section \ref{section:preliminaries} discusses the preliminary works which we have used in our paper. Section \ref{section:materialAndMethods} describes the models which we have constructed for water quality prediction, plant suggestion and various datasets on which we have applied our models. Section \ref{section:expAndRes} describes the parameter settings for our model, evaluation metrics and results of applying our models on the datasets. Section \ref{section:conclusionAndFutureWork} gives a conclusion to our work and describes the improvements and new methods that we are planning to apply in the future.  
 
@@ -136,7 +136,7 @@ Testing of water for irrigation purposes is required to prevent any damage to cr
 
 \subsubsection{Water Quality Parameters}
 \label{subsubsection:WaterQualityParameters}
-As mentioned in Section \ref{subsection:devIWQI}, 13 parameters Electrical Conductivity, pH, Calcium ion concentration, Sodium ion concentration, Sodium Absorption Ratio(SAR) etc. were measured. Factor Analysis(FA) and Principal Component Analysis(PCA) were applied to the data in which Electrical Conductivity, SAR, Carbonate, Sodium,Chloride and Chloride ion concentration showed highest correlation$(>0.9)$ among them. Also, they carried the majority of factorial load in Factorial Analysis(FA) hence they were selected for developing water quality index. The weights for each parameter are based on variance of the first factor of the factorial load matrix\cite{article:irrigationWaterQuality}. All the weights were added and weight of each parameter was divided by the total weight to obtain the relative weights which are shown in Table \ref{table:wqiParams}. 
+As mentioned in Section \ref{subsection:devIWQI}, 13 parameters Electrical Conductivity, pH, Calcium ion concentration, Sodium ion concentration, Sodium Absorption Ratio(SAR) etc. were measured. Factor Analysis(FA) and Principal Component Analysis(PCA) were applied to the data in which Electrical Conductivity, SAR, Carbonate, Sodium and Chloride ion concentration showed highest correlation$(>0.9)$ among them. Also, they carried the majority of factorial load in Factorial Analysis(FA) hence they were selected for developing water quality index. The weights for each parameter are based on variance of the first factor of the factorial load matrix\cite{article:irrigationWaterQuality}. All the weights were added and weight of each parameter was divided by the total weight to obtain the relative weights which are shown in Table \ref{table:wqiParams}. 
 
 \begin{table}[h!]
     \centering
@@ -192,14 +192,14 @@ $w_i$: weight of parameter from Table \ref{table:wqiParams}
 
 \begin{table}[h!]
     \centering
-    \begin{tabular}{| m{0.1\textwidth} | m{0.12\textwidth}| m{0.3\textwidth} | m{0.3\textwidth} |}
+    \begin{tabular}{| m{0.1\textwidth} | m{0.15\textwidth}| m{0.25\textwidth} | m{0.3\textwidth} |}
     \hline
-        IWQI & Restrictions & Soil & Plant \\ \hline
-        85–100 & No restrictions (NR) & It can be used for most soils with low probability of solidification and salinization & Most plants won’t be affected \\ \hline
-        70–85 & Low restriction (LR) & Use for soil with fine texture or moderate permeability & Avoid use in plants with salt sensitivity \\ \hline
-        55–70 & Moderate restriction (MR) & Can be used in soils with high or moderate permeability & Plants with moderate salt tolerance will be unaffected \\ \hline
-        40–55 & High restriction (HR) & Can be used on soils with high permeability without layers of compaction. & It should be used to irrigate plants with moderate to high salt tolerance with special salinity control practices \\ \hline
-        0–40 & Severe restriction (SR) & Use for irrigation under normal conditions should be avoided. & Avoided for all plants \\ \hline
+        \textbf{IWQI} & \textbf{Restrictions} & \textbf{Soil} & \textbf{Plant} \\ \hline
+        85–100 & No restrictions & Can be used for any kind of soil & Most plants won’t be affected \\ \hline
+        70–85 & Low restriction (LR) & Can be used on soil with moderate permeability & Avoid use in plants with very low salt tolerance \\ \hline
+        55–70 & Moderate restriction (MR) & Can be used on soils with moderate to high permeability & Avoid in plants with low salt tolerance \\ \hline
+        40–55 & High restriction (HR) & Can be used on soils with high permeability without dense layers & Used mainly in plants with high salt tolerance. Plants with moderate salt tolerance can be used with some control practices \\ \hline
+        0–40 & Severe restriction (SR) & Use for irrigation should be avoided & Avoid for all plants \\ \hline
     \end{tabular}
     \caption{Classification of water sample based on IWQI}
     \label{table:classifyWQI}
@@ -266,7 +266,7 @@ Artificial Neural Networks are inspired by the structure of our brain where dend
 
 \subsubsection{SVM}
 \label{subsubsection:svm}
-SVM presents one of the most robust prediction methods\cite{article:svm}. Its objective is to find a hyperplane with maximum margin separation which distinctly classifies data points. Maximizing the margin distance provides some reinforcement so that future data points can be classified with more confidence. It can be used for classification, regression and also for outlier detection. This algorithm is very effective in high dimensional spaces and where the number of dimensions is greater than the number of given samples. It only uses a small sample of training points to construct a decision hyperplane which makes it memory efficient. It uses kernel trick for mapping higher dimension space to lower dimension without using actual vectors.
+SVM is one of the most reliable classifiers. It performs classification by maximizing the margin between two classes so that classifying them becomes easier and more accurate\cite{article:svm}. If the classification is not possible in lower number of dimensions then using kernel trick we can efficiently classify a sample in higher dimensions. This method doesn't make use of actual vector calculations due to which it is quite efficient.
 
 \subsubsection{Gradient Boost Classifier}
 \label{subsubsection:gradientBoost}
@@ -278,19 +278,11 @@ It is an ensemble learning method which uses multiple trees to give a result\cit
 
 \subsubsection{Decision Tree}
 \label{subsubsection:decisionTree}
-A decision tree is a flowchart like structure where nodes represent an if else condition, each branch represents the outcome and leaf nodes represent the actual class label\cite{article:decisionTree}. Here, the path from root to leaf gives us the classification rule for that class. Commonly used algorithms for splitting are: Gini impurity, Chi-Square and Information Gain.
+A decision tree is a hierarchical structure where nodes represent an if else condition, each branch represents the output and leaf nodes represent the actual class label\cite{article:decisionTree}. Here, the path from root to leaf gives us the classification rule for that class. Commonly used algorithms for splitting are: Gini impurity, Chi-Square and Information Gain.
 
 \subsubsection{Naive Bayes}
 \label{subsubsection:naiveBayes}
-Naive Bayes is a simple classifier based on Bayes Theorem with a naive assumption that features are independent of each other\cite{article:naiveBayes}. Bayes’ theorem states the following relationship, given class variable y and dependent feature vector $x_1$ through $x_n$ ,:
-\begin{equation}
-P(y \mid x_1, \dots, x_n) = \frac{P(y) P(x_1, \dots, x_n \mid y)}{P(x_1, \dots, x_n)}   
-\end{equation}
-
-Using Naive assumption we get,
-\begin{align}\begin{aligned}P(y \mid x_1, \dots, x_n) \propto P(y) \prod_{i=1}^{n} P(x_i \mid y)\\\Downarrow\\\hat{y} = \arg\max_y P(y) \prod_{i=1}^{n} P(x_i \mid y),\end{aligned}\end{align}
-
-Naive Bayes classifier is quite fast than more complex methods but is a bad estimator due to which its probability values can’t be trusted.
+Naive Bayes is a primitive classifier which uses Bayes theorem as its base and states that in the Bayes theorem, features are independent of each other\cite{article:naiveBayes}. This assumption may seem to be strict in nature but it is able to generate results. This assumption makes the algorithm quite fast but it comes at the cost of reliability and its probability values can't be trusted.  
 
 \subsubsection{Bagging Classifier}
 \label{subsubsection:baggingClassifier}
@@ -310,11 +302,11 @@ The data is collected for the US Geological Sur\cite{dataset:majorIons} in suppo
 
 \subsubsection{Lucas Topsoil Dataset}
 \label{subsubsection:lucas}
-Lucas dataset  was constructed by ESDAC(European Soil Data Centre) to derive statistics for impact of land management on soil properties\cite{dataset:lucas}. We use 2015 lucas topsoil data for our model which has 21859 data points. The dataset consists of physical properties of soil which are clay, silt, sand, coarse fragments and chemical properties of soil which are pH(CaCl2), pH(H2O), Electrical conductivity, Organic carbon content, Carbonates content, Phosphorus content, Total nitrogen content, Extractable potassium content out of which we use pH(H20) and Electrical Conductivity for our model. Electrical Conductivity was given in mS/m which is converted to dS/m for use. pH(H2O) represents Hydrogen Potential measured in water which represents the degree of acidity or basicity of a sample. We chose the above mentioned parameters since it can be measured from an IoT sensor. This dataset also consists of information on land cover and land use, irrigation management, structural elements in the landscape and crop residues which can be used for various applications.
+Lucas dataset  was constructed by ESDAC(European Soil Data Centre) to derive statistics for impact of land management on soil properties\cite{dataset:lucas}. We use 2015 lucas topsoil data for our model which has 21859 data points. The dataset consists of physical properties of soil which are clay, silt, sand, coarse fragments and chemical properties of soil which are pH(CaCl2), pH(H2O), Electrical conductivity, Organic carbon content, Carbonates content, Phosphorus content, Total nitrogen content, Extractable potassium content out of which we use pH(H20) and Electrical Conductivity for our model. Electrical Conductivity was given in mS/m which is converted to dS/m for use. pH(H2O) represents Hydrogen Potential measured in water which represents the degree of acidity or basicity of a sample. We chose the above mentioned parameters since it can be measured from an IoT sensor. 
 
 \subsection{Irrigation Water Quality Index based classification}
 \label{subsection:iwqiClassification}
-This work focuses on classifying various water samples under water quality classes as described in Table \ref{table:classifyWQI}. We develop a classification model and apply it on the Major Ions Dataset that contains all the parameters necessary to calculate the Irrigation Water Quality Index(IWQI). The IWQI classifier is developed using three steps: Converting parameters to quality measurement values, calculating IWQI using quality measurement values and relative weights of each parameter and assign a class based on ranges in table \ref{table:classifyWQI}, using various classification techniques to predict IWQI Class and selecting the best technique out of them. These steps are explained in the following subsections. 
+This work focuses on classifying various water samples under water quality classes as described in Table \ref{table:classifyWQI}. We develop a classification model and apply it on the Major Ions Dataset that contains all the parameters necessary to calculate the Irrigation Water Quality Index(IWQI). The IWQI classifier is developed using three steps: Converting parameters to quality measurement values, calculating IWQI using quality measurement values and relative weights of each parameter and assign a class based on ranges in Table \ref{table:classifyWQI}, using various classification techniques to predict IWQI Class and selecting the best technique out of them. These steps are explained in the following subsections. 
 
 \subsubsection{Quality Measurement Values}
 \label{subsubsection:qualtityMesurementValues}
@@ -350,16 +342,16 @@ Water samples can be classified according to IWQI value obtained using Table \re
 \end{enumerate}
 
 \begin{equation}
-    r = \frac{\sum(X_i - \Bar{X})(Y_i - \Bar{Y})}{\sqrt{\sum(X_i - \Bar{X})^2(Y_i - \Bar{Y})^2}}
+    r = \frac{\sum(U_i - \Bar{U})(V_i - \Bar{V})}{\sqrt{\sum(U_i - \Bar{U})^2(V_i - \Bar{V})^2}}
 \label{equation:correlationMatrixOfIons&IWQI}
 \end{equation}
 
 Here, \newline
 r: correlation coefficient \newline
-X$_i$: value of x-variable in the sample \newline
-$\Bar{X}$: mean value of x-variable \newline
-Y$_i$: value of y-variable in the sample \newline
-$\Bar{X}$: mean value of y-variable
+U$_i$: value of U-variable in the sample \newline
+$\Bar{U}$: mean value of U-variable \newline
+V$_i$: value of V-variable in the sample \newline
+$\Bar{V}$: mean value of V-variable
 
 
 \begin{table}[h!]
@@ -378,12 +370,12 @@ $\Bar{X}$: mean value of y-variable
     \label{table:correlationMatrixOfIons&IWQI}
 \end{table}
 
-We select three parameters Cl$^-$, Na$^+$ and EC for developing our classification model due to them having higher correlation with IWQI. This way, we are able to save cost for sensors for HCO$^{3-}$, Mg$^{2+}$ and Ca$^{2+}$( used to calculate SAR). We used 7 classification algorithms for predicting IWQI class for water samples: Decision Tree Classifier, Naive Bayes, Gradient Boosting Classifier, Random Forest Classifier, Support Vector Machine, Bagging  and MLP Classifier(ANN Classifier) details of which are mentioned in Section \ref{subsection:classificationAlgos}. The method having the best accuracy and F2 score is selected for further use. Steps for classification are mentioned in algorithm \ref{algorithm:classifyIWQI}.
+We select three parameters Cl$^-$, Na$^+$ and EC for developing our classification model due to them having higher correlation with IWQI. This way, we are able to save cost for sensors for HCO$^{3-}$, Mg$^{2+}$ and Ca$^{2+}$( used to calculate SAR). We used 7 classification algorithms for predicting IWQI class for water samples which are mentioned in Section \ref{subsection:classificationAlgos}. The method having the best accuracy and F2 score is selected for further use. Steps for classification are mentioned in algorithm \ref{algorithm:classifyIWQI}.
 
 \begin{algorithm}[H]
 	\caption{Classification of water samples based on IWQI}
 	\begin{algorithmic}[1]
-		\label{stackedautoencoderAlgorithm}
+	    \label{algorithm:classifyIWQI}
 		\renewcommand{\algorithmicrequire}{\textbf{Input:}}
 		\renewcommand{\algorithmicensure}{\textbf{Output:}}
 		\REQUIRE Water quality dataset with 5 parameters Cl$^-$, Na$^+$, EC, HCO$^{3-}$ and SAR
@@ -394,11 +386,10 @@ We select three parameters Cl$^-$, Na$^+$ and EC for developing our classificati
         \STATE Choose features of dataset as: features \xleftarrow{} Cl$^-$,Na$^+$,EC 
         \STATE Choose labels of dataset as:IWQI
         \STATE Split dataset into training\_set and testing\_set
-        \STATE Apply the 7 classifiers(Decision Tree Classifier, Naive Bayes, Gradient Boosting Classifier, Random Forest Classifier, Support Vector Machine, Bagging  and MLP Classifier) on the training set and evaluate on the testing set using accuracy and F2 score.
+        \STATE Apply the 7 classifiers mentioned in Section \text{\ref{subsection:classificationAlgos}} on the training set and evaluate on the testing set using accuracy and F2 score.
         \RETURN algorithm with best score
         % \EndProcedure
 	\end{algorithmic} 
-	\label{algorithm:classifyIWQI}
 \end{algorithm}
 
 \subsection{Model for suggesting plants based on EC and pH of soil or water}
@@ -407,7 +398,7 @@ For suggesting the plants which can be grown in the given water or soil sample, 
 The workflow is indicated by Fig. \ref{fig:phAndECRanges} where electrical conductivity and pH is taken as input for a given water or soil sample and we decide according to the ranges in Table \ref{table:phAndECRanges} whether water or soil conditions are suitable for the given plant or not. If it meets the required conditions, that water or soil sample is added to the set of water and soil samples for the chosen plant.
 
 \begin{figure}[H]
-\includegraphics[width=0.49\linewidth]{Model for suggesting plants.png}
+\includegraphics[width=0.7\linewidth]{Model for suggesting plants.png}
 \centering
 \caption{Calculating IWQI and suggesting the best plants for a given water or soil sample}
 \label{fig:phAndECRanges}
@@ -423,13 +414,19 @@ The parameter settings for all the classifiers are mentioned in Table \ref{table
 
 \renewcommand{\labelitemi}{\textbullet}
 \begin{itemize}
-    \item \textbf{Decision Tree Classifier:} criterion: The function to measure the quality of a split, splitter: The strategy used to choose the split at each node, min\_samples\_split: The minimum number of samples required to split an internal node.
-    \item \textbf{Naive Bayes Classifier:} alpha: Additive (Laplace/Lidstone) smoothing parameter (0 for no smoothing), class\_prior:Prior probabilities of the classes, class\_count: Number of samples encountered for each class during fitting. 
-    \item \textbf{Gradient Boosting Classifier:} loss: The loss function to be optimized. learning rate: Learning rate shrinks the contribution of each tree by learning\_rate. N\_estimators: The number of boosting stages to perform.
-    \item \textbf{Random Forest Classifier:} n\_estimators: The number of trees in the forest, criterion:The function to measure the quality of a split, base\_estimator\_: The child estimator template used to create the collection of fitted sub-estimators.
-    \item \textbf{Support Vector Classifier:} C: Regularization Parameter, decision\_function\_shape: The shape of decision function to return,  tol:Tolerance for stopping criterion
-    \item \textbf{Bagging Classifier:} The base estimator to fit on random subsets of the dataset, n\_estimators: The number of base estimators in the ensemble.
-    \item \textbf{MLPClassifier:} hidden\_layer\_sizes: The ith element represents the number of neurons in the ith hidden layer, activation: Activation function for the hidden layer,  Learning\_rate: Learning rate for updating weights.
+    \item \textbf{Decision Tree Classifier:}  criterion: The function which is chosen to evaluate split quality, splitter:choosing the method of splitting at each node, min\_samples\_split: The least number of samples that are required to split an internal node.
+
+    \item \textbf{Naive Bayes Classifier:}  alpha: choosing the additive smoothing parameters(either Laplace or Lidstone) , class\_prior: estimated probability of new outcomes for each class, class\_count: during fitting, number of samples found under each class.
+
+    \item \textbf{Gradient Boosting Classifier:} loss: The function whose loss(or cost) we want to reduce . learning rate: this parameter is used to change the contribution of trees in overall classification, N\_estimators: Stages of boosting to perform. Large value gives better performance.
+
+    \item \textbf{Random Forest Classifier:} n\_estimators:The number of trees we need to consider before max voting or average predictions, criterion:The function which is chosen to evaluate split quality(we can choose either ‘gini’ or ‘entropy’), base\_estimator: base template (typically Decision Tree Classifier) which are used to create sub estimators. 
+
+    \item \textbf{Support Vector Classifier:} C: Regularization Parameter, decision\_shape: The shape of decision function to return, tol:Tolerance for stopping criterion
+
+    \item \textbf{Bagging Classifier:} base\_estimator: base estimator selected to fit on random subspaces of the dataset(by default it is DecisionTree Classifier), n\_estimators: the count of base\_estimators.
+    
+    \item \textbf{MLPClassifier:} hidden\_layer\_sizes:This is an array of size n-2 in which each element represents size of hidden layers where the layer position is the position of the element in the array, activation: function that determines the output of hidden layer(typically tanh or relu), Learning\_rate: This parameter determines the step size of gradient descent.
 \end{itemize}
 
 \begin{table}[H]
@@ -451,7 +448,7 @@ The parameter settings for all the classifiers are mentioned in Table \ref{table
 
 \subsection{Evaluation Metrics For Classification Model}
 \label{subsection:evaluationMetrics}
-Classification algorithms used are evaluated using Accuracy, Precision, Recall and F1 score. We also divided the dataset into five parts for cross validation and measured accuracy on each part. Before we define these metrics we need to define True Positive, True Negative, False Positive, False Negative. When a model correctly predicts positive class it is True Positive(TP), correct prediction of Negative class is True Negative(TN), wrong prediction of positive class is False Positive(FP) and wrong prediction of negative class is False Negative(FN). For multi-class classification, true-positive prediction means that an  observation has been assigned a class to which it belongs and negatives occur when observation is assigned to any other class.  The metrics we used are explained below:
+Classification algorithms used are evaluated using Accuracy, Precision, Recall and F1 score. We also divided the dataset into five parts for cross validation and measured accuracy on each part. Before we define these metrics we need to define different types of result of class predictions which are True positive, False positive, True negative and False negative. When a model correctly predicts positive class it is True Positive(TPos), correct prediction of Negative class is True Negative(TNeg), wrong prediction of positive class is False Positive(FPos) and wrong prediction of negative class is False Negative(FNeg). For multi-class classification, true-positive prediction means that an observation has been assigned a class to which it belongs and negatives occur when observation is assigned to any other class. The metrics we used are explained below:
 
 \begin{itemize}
     \item \textbf{Accuracy:} Is defined as the total number of current predictions divided by total number of predictions. Its formula is given by Equation \ref{equation:accuracy}.
@@ -464,27 +461,27 @@ Classification algorithms used are evaluated using Accuracy, Precision, Recall a
 
 \begin{equation}
 \label{equation:accuracy}
-    Accuracy = \frac{TP + TN}{TP + TN + FP + FN}
+    Accuracy = \frac{TPos + TNeg}{TPos + TNeg + FPos + FNeg}
 \end{equation}
 
 \begin{equation}
 \label{equation:precision}
-    Precision = \frac{TP}{TP + FP}
+    Precision(P) = \frac{TPos}{TPos + FPos}
 \end{equation}
 
 \begin{equation}
 \label{equation:recall}
-    Recall = \frac{TP}{TP + FN}
+    Recall(R) = \frac{TPos}{TPos + FNeg}
 \end{equation}
 
 \begin{equation}
 \label{equation:f1Score}
-    F1 Score = 2*\frac{Precision*Recall}{Precision+Recall}
+    F1 Score = 2*\frac{P*R}{P+R}
 \end{equation}
 
 \subsection{Results of Classification based on IWQI}
 \label{subsection:resultsOfClassificationBasedOnIWQI}
-We applied Algorithm 1 on the major ions dataset with 70-30 train-test split and evaluated it with the metrics Accuracy, Precision, Recall and F1 score. The confusion matrix for all the classification algorithms are shown in Fig. \ref{fig:confusionMatrixForAllAlgos}. For this experiment, we have assigned the numbers to IWQI range with 0-40 as 0, 40-55 as 1, 55-70 as 2, 70-85 as 3 and 85-100 as 4. For the major ions dataset, there are the least number of samples belonging to class 4(495 out of 37999) which is not enough size for classification and hence the poor performance of all the algorithms for that class. For all other classes 0-3, the algorithm performs well except for Naive Bayes Classifier. Using the confusion matrix from Fig. \ref{fig:confusionMatrixForAllAlgos} and Equations \ref{equation:accuracy},\ref{equation:precision},\ref{equation:recall} and \ref{equation:f1Score}, we calculated the Accuracy, Precision, Recall and F1 Score in Table \ref{table:classificationResults}. Random forest has the best performance with accuracy of 86.9\% followed by Gradient Boosting(85.8\%) and MLP classifier(84.6\%). Performance of Naive Bayes is the worst with an accuracy of 52.6\% and F1 Score of 13.8\%. We also performed 5-fold validation for our methods whose results are given in Table \ref{table:fiveFoldCrossValidation} where Random Forest performs the best and Naive Bayes performs the worst.
+We applied Algorithm 1 on the major ions dataset with 70-30 train-test split and evaluated it with the metrics defined in 5.2. The confusion matrix for all the classification algorithms are shown in Fig. \ref{fig:confusionMatrixForAllAlgos}. For this experiment, we have assigned the numbers to IWQI range with 0-40 as 0, 40-55 as 1, 55-70 as 2, 70-85 as 3 and 85-100 as 4. For the major ions dataset, there are the least number of samples belonging to class 4(495 out of 37999) which is not enough size for classification and hence the poor performance of all the algorithms for that class. For all other classes 0-3, the algorithm performs well except for Naive Bayes Classifier. Using the confusion matrix from Fig. \ref{fig:confusionMatrixForAllAlgos} and Equations \ref{equation:accuracy},\ref{equation:precision},\ref{equation:recall} and \ref{equation:f1Score}, we calculated the Precision, Recall, Accuracy and F1 Score in Table \ref{table:classificationResults}. Random forest has the best performance with accuracy of 86.9\% followed by Gradient Boosting(85.8\%) and MLP classifier(84.6\%). Performance of Naive Bayes is the worst with an accuracy of 52.6\% and F1 Score of 13.8\%. We also performed 5-fold validation for our methods whose results are given in Table \ref{table:fiveFoldCrossValidation} where Random Forest performs the best and Naive Bayes performs the worst.
 
 \begin{table}[H]
     \centering
@@ -651,9 +648,9 @@ We apply the model given in Section 4.3 for suggesting plants based on a given w
 
 \section{Conclusion and Future Work}
 \label{section:conclusionAndFutureWork}
-The purpose of this work was to develop a classification model for classifying water samples based on irrigation quality and to suggest plants based on given water quality and soil salinity and pH. The work can be used to save the cost of lab tests involved in measuring water and soil samples once we start using sensors for measuring the properties. For quantifying water quality, we calculated Irrigation Water Quality Index(IWQI) of water samples using properties like Electrical Conductivity and Chemical Ion concentrations like Sodium, Chlorine etc of water. The index chosen is mainly focused on the effect of water on soil sodicity, salinity and toxicity. We assigned water quality classes to different ranges of IWQI values. Seven classification methods were used out of which Random Forest performed the best(86.9\%) followed by Gradient Boosting and Neural Networks on all of the evaluation methods used. For suggestions of plants based on water and soil properties, we converted the restrictions on soil salinity and pH and water quality for various plants to conditional statements. We were able to suggest plants for all the soil and water samples obtained except one third of soil and one fifth of water samples due to them being unfit for agricultural purposes.
+We developed models for classifying water samples based on quality and suggesting plants based on soil and water parameters. We found out water samples  for quantifying water quality, we calculated Irrigation Water Quality Index(IWQI) of water samples using properties like Electrical Conductivity and Chemical Ion concentrations like Sodium, Chlorine etc of water. The index chosen is mainly focused on the effect of water on soil sodicity, salinity and toxicity. We assigned water quality classes to different ranges of IWQI values. Seven classification methods were used out of which Random Forest performed the best(86.9\%) followed by Gradient Boosting and Neural Networks on all of the evaluation methods used. For suggestions of plants based on water and soil properties, we converted the restrictions on soil salinity, pH and water quality for various plants to conditional statements. We were able to suggest plants for all the soil and water samples obtained except one third of soil and one fifth of water samples due to them being unfit for agricultural purposes.
+Water quality taken in this work is mainly based on salinity of water samples whereas there can be many other parameters on which water quality can depend on like acidity, pollution level etc. Additionally, experiments can be done to see the effect of various water samples on plant growth keeping other factors like soil and weather as constant .The parameters mentioned can be used along with parameters used in our paper to develop an index covering more factors of water quality. The results can be further improved by collecting  more water samples from different types of water bodies. For soil samples, we only considered two parameters for suggestion of plants. More parameters like NPK, metals etc. can be measured along with plant growth data for the soil which can be used to develop a recommender system for recommending plants based on soil and water conditions.
 
-In future, we plan to extend our model by automating data collection processes using IoT devices. We plan to develop a recommendation system of crops based on soil, water and weather properties. We plan to work on other phases of agriculture such as soil preparation, crop selection, fertilizing and harvesting and developing models to analyze and assist in them. We plan to develop a mobile/web application that will provide an interface for using functionalities developed in this work. We also plan to explore other possible domains of IoT such as networking, developing softwares for hardware like raspberry PI and Arduino and automation in Farming.
 
 
 
